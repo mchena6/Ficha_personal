@@ -3,14 +3,13 @@ import { Button } from "primereact/button";
 import { Fragment } from "react";
 
 const Home = () =>{
-    const navigate = useNavigate()
 
+    const navigate = useNavigate()
     return(
         <Fragment>
-
-        <Button label="Ir al formulario" onClick={()=> navigate('/tarjeta')}/>
-        <Button label="Ver personas" onClick={()=> navigate('/personas')}/>
-        
+            <h2>Mi Home</h2>
+            <Button onClick={() => navigate('/tarjeta')} label='Ir al formulario' ></Button>
+            <Button onClick={() => navigate('/personas')} label='Ver total de personas' ></Button>
         </Fragment>
     )
 }
